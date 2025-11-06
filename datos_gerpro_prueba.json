@@ -1,0 +1,386 @@
+[
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 1,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 2,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 3,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 4,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 5,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 6,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 7,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 8,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 9,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 10,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 11,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 12,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 13,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 14,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 15,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 16,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 500,
+"periodo": 4,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 500,
+"periodo": 5,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 6,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1500,
+"periodo": 7,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 200,
+"periodo": 8,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 450,
+"periodo": 9,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 10,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 500,
+"periodo": 11,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 500,
+"periodo": 12,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 13,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1500,
+"periodo": 14,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 200,
+"periodo": 15,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 450,
+"periodo": 16,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 17,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 2500,
+"periodo": 18,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 1",
+"valor": 1000,
+"periodo": 19,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 15,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 16,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 17,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 18,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 19,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 20,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 21,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 22,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 23,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 24,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 25,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 26,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 27,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 28,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 29,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 30,
+"concepto": "ingresos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 625,
+"periodo": 22,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 625,
+"periodo": 23,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 24,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1875,
+"periodo": 25,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 250,
+"periodo": 26,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 562.5,
+"periodo": 27,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 28,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 625,
+"periodo": 29,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 625,
+"periodo": 30,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 31,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1875,
+"periodo": 32,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 250,
+"periodo": 33,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 562.5,
+"periodo": 34,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 35,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 3125,
+"periodo": 36,
+"concepto": "costos"
+},
+{
+"subetapa": "Torre 2",
+"valor": 1250,
+"periodo": 37,
+"concepto": "costos"
+}
+]
