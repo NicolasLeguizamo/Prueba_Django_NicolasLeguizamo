@@ -1,6 +1,6 @@
 # Prueba técnica
 
-Proyecto Django que implementa la prueba técnica de flujo de caja constructor:
+Proyecto Django que implementa una funcion de flujo de caja:
 
 - Función `calcular_cronograma` en `PruebaTecnica/calculos.py` que calcula el cronograma de crédito y aportes usando los datos del JSON oficial.
 - Vista `cronograma_view` (ruta `/`) permite ingresar parámetros, consumir un JSON público y mostrar los resultados en una tabla por periodo.
@@ -30,7 +30,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Visita `http://localhost:8000/cronograma/` y completa el formulario con la URL del JSON y los parámetros del crédito.
+Visita `http://localhost:8000/` y completa el formulario con la URL del JSON y los parámetros del crédito.
 
 ## Modelos principales
 
