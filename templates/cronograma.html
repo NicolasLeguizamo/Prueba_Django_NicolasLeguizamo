@@ -4,93 +4,155 @@
     <meta charset="UTF-8">
     <title>Cronograma de crédito</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 2rem; }
-        h1 { margin-bottom: 1rem; }
-        form { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 4px; }
-        label { display: block; margin-top: 0.75rem; font-weight: bold; }
-        input { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
-        .messages { margin-bottom: 1rem; }
-        .messages li { list-style: none; padding: 0.5rem; border-radius: 3px; }
-        .messages .success { background-color: #e6ffed; border: 1px solid #8bc34a; }
-        .messages .error { background-color: #ffe6e6; border: 1px solid #f44336; }
-        table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
-        th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: right; }
-        th { background-color: #f4f4f4; position: sticky; top: 0; }
-        td:first-child, th:first-child { text-align: center; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            display: block;
+            margin-top: 0.75rem;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .messages {
+            margin-bottom: 1rem;
+        }
+
+        .messages li {
+            list-style: none;
+            padding: 0.5rem;
+            border-radius: 3px;
+        }
+
+        .messages .success {
+            background-color: #e6ffed;
+            border: 1px solid #8bc34a;
+        }
+
+        .messages .error {
+            background-color: #ffe6e6;
+            border: 1px solid #f44336;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: right;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            position: sticky;
+            top: 0;
+        }
+
+        td:first-child, th:first-child {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Cronograma de crédito constructor</h1>
+<h1>Cronograma de crédito constructor</h1>
 
-    {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-                <li class="{{ message.tags }}">{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-
-    <form method="post">
-        {% csrf_token %}
-        {% for field in form %}
-            <label for="{{ field.id_for_label }}">{{ field.label }}
-                {% if field.help_text %}
-                    <small>{{ field.help_text }}</small>
-                {% endif %}
-            </label>
-            {{ field }}
-            {% for error in field.errors %}
-                <div class="messages"><li class="error">{{ error }}</li></div>
-            {% endfor %}
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
         {% endfor %}
-        {% if form.non_field_errors %}
-            <div class="messages">
-                {% for error in form.non_field_errors %}
-                    <li class="error">{{ error }}</li>
-                {% endfor %}
-            </div>
-        {% endif %}
-        <button type="submit">Calcular cronograma</button>
-    </form>
+    </ul>
+{% endif %}
 
-    {% if rows %}
-        <table>
-            <thead>
-                <tr>
-                    <th>Periodo</th>
-                    <th>Ingresos</th>
-                    <th>Costos</th>
-                    <th>FCO</th>
-                    <th>Desembolso</th>
-                    <th>Saldo</th>
-                    <th>Interés generado</th>
-                    <th>Interés pagado</th>
-                    <th>Pago crédito</th>
-                    <th>FCN</th>
-                    <th>Aporte capital</th>
-                    <th>Flujo apalancado</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for row in rows %}
-                    <tr>
-                        <td>{{ row.periodo }}</td>
-                        <td>{{ row.ingresos }}</td>
-                        <td>{{ row.costos }}</td>
-                        <td>{{ row.fco }}</td>
-                        <td>{{ row.desembolso }}</td>
-                        <td>{{ row.saldo }}</td>
-                        <td>{{ row.interes_generado }}</td>
-                        <td>{{ row.interes_pagado }}</td>
-                        <td>{{ row.pago_credito }}</td>
-                        <td>{{ row.fcn }}</td>
-                        <td>{{ row.aporte_capital }}</td>
-                        <td>{{ row.flujo_apalancado }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+<form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+        <label for="{{ field.id_for_label }}">{{ field.label }}
+            {% if field.help_text %}
+                <small>{{ field.help_text }}</small>
+            {% endif %}
+        </label>
+        {{ field }}
+        {% for error in field.errors %}
+            <div class="messages">
+                <li class="error">{{ error }}</li>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {% if form.non_field_errors %}
+        <div class="messages">
+            {% for error in form.non_field_errors %}
+                <li class="error">{{ error }}</li>
+            {% endfor %}
+        </div>
     {% endif %}
+    <button type="submit">Calcular cronograma</button>
+</form>
+
+{% if rows %}
+    <table>
+        <thead>
+        <tr>
+            <th>Periodo</th>
+            <th>Ingresos</th>
+            <th>Costos</th>
+            <th>FCO</th>
+            <th>Desembolso</th>
+            <th>Saldo</th>
+            <th>Interés generado</th>
+            <th>Interés pagado</th>
+            <th>Pago crédito</th>
+            <th>FCN</th>
+            <th>Aporte capital</th>
+            <th>Flujo apalancado</th>
+            <th>Flujo Acumulado</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row.periodo }}</td>
+                <td>{{ row.ingresos }}</td>
+                <td>{{ row.costos }}</td>
+                <td>{{ row.fco }}</td>
+                <td>{{ row.desembolso }}</td>
+                <td>{{ row.saldo }}</td>
+                <td>{{ row.interes_generado }}</td>
+                <td>{{ row.interes_pagado }}</td>
+                <td>{{ row.pago_credito }}</td>
+                <td>{{ row.fcn }}</td>
+                <td>{{ row.aporte_capital }}</td>
+                <td>{{ row.flujo_apalancado }}</td>
+                <td>{{ row.flujo_acumulado }}</td>
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
 </body>
 </html>
 

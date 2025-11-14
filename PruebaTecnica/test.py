@@ -1,8 +1,14 @@
 import json
+
+import requests
+
 from PruebaTecnica.calculos import calcular_cronograma
 
 with open("../datos_gerpro_prueba.json") as fh:
     datos = json.load(fh)
+url = "https://storage.googleapis.com/siga-cdn-bucket/temporal_dm/datos_gerpro_prueba_v2.json"
+respuesta = requests.get(url, timeout=15)
+datos2 =  respuesta.json()
 
 #   Datos de ejemplo para probar la función
 #     movimientos=datos,
@@ -12,4 +18,4 @@ with open("../datos_gerpro_prueba.json") as fh:
 #     periodo_final_credito=30,      
 #     tasa_interes_anual=12,        
 
-print(calcular_cronograma(datos,7000,8,7,30,12))
+print(calcular_cronograma(datos2,7000,20,9,23,12))

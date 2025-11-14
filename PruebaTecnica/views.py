@@ -95,6 +95,7 @@ def _preparar_filas(resultados: dict) -> List[dict]:
                 "fcn": _quantize(credito["fcn"]),
                 "aporte_capital": _quantize(aporte["aporte_capital"]),
                 "flujo_apalancado": _quantize(aporte["flujo_apalancado"]),
+                "flujo_acumulado": _quantize(aporte['flujo_acumulado']),
             }
         )
     return filas
